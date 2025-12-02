@@ -1,8 +1,12 @@
 {
     "rewrites": [
         {
-            "source": "/gwent-api/:match*",
-            "destination": "https://api.gwent.one/:match*"
+            "source": "/gwent-api",
+            "destination": "https://api.gwent.one"
+        },
+        {
+            "source": "/gwent-api/(,*)",
+            "destination": "https://api.gwent.one/$1"
         }
     ]
 }
